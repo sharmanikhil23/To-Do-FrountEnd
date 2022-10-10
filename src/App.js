@@ -1,25 +1,68 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect, Component } from "react";
+import { SignIn } from "./forms/signin";
+import { MainPage } from "./main/app";
+import { SignUp } from "./forms/signUp";
 
-function App() {
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+export const App = () => {
+  const setDefault = {
+    name: "",
+    email: "",
+    password: "",
+    age: "",
+    error: {
+      message: "",
+      errorValue: false,
+    },
+  };
+  const [data, setData] = useState(setDefault);
+
+  const setDataToDefault = () => {
+    setData(setDefault);
+  };
+  useEffect(() => {
+    setTimeout(() => {
+      setData((current) => {
+        return {
+          ...current,
+          error: {
+            errorValue: false,
+            message: "",
+          },
+        };
+      });
+    }, 4000);
+  }, [data.error.errorValue == true]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/main" exact element={<MainPage></MainPage>} />
+        <Route
+          path="/signup"
+          exact
+          element={
+            <SignUp
+              {...data}
+              setData={setData}
+              setDataToDefault={setDataToDefault}
+            ></SignUp>
+          }
+        />
+        <Route
+          path="/"
+          exact
+          element={
+            <SignIn
+              {...data}
+              exact
+              setData={setData}
+              setDataToDefault={setDataToDefault}
+            ></SignIn>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
   );
-}
-
-export default App;
+};
