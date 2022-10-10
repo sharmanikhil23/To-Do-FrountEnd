@@ -1,4 +1,5 @@
 const { REACT_APP_MY_URL } = process.env;
+import React from "react";
 export const addingNewData = async (data) => {
   const userId = JSON.parse(localStorage.getItem("User Data")).user._id;
 
