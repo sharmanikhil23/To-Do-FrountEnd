@@ -4,7 +4,7 @@ import { MainPage } from "./main/app";
 import { SignUp } from "./forms/signUp";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+console.log();
 export const App = () => {
   const setDefault = {
     name: "",
