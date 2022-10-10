@@ -1,8 +1,8 @@
+import React from "react";
 import { AiOutlinePlus, AiOutlineClose } from "react-icons/ai";
 import { upDatingData } from "./requests/upDatingData";
 import { addingNewData } from "./requests/addingNewData";
 import { fetchingAllNotes } from "./requests/fetchingAllData";
-import React from "react";
 
 export const Adding = ({
   allNotes,

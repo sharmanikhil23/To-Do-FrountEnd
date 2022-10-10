@@ -1,5 +1,5 @@
-import { useState, useEffect, useRef } from "react";
 import React from "react";
+import { useState, useEffect, useRef } from "react";
 import { Header } from "./header";
 import { Main } from "./main";
 import { Adding } from "./addingArea";

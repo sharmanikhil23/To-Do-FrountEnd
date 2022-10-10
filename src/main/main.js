@@ -1,5 +1,5 @@
-import { AiOutlineArrowUp, AiOutlineArrowDown } from "react-icons/ai";
 import React from "react";
+import { AiOutlineArrowUp, AiOutlineArrowDown } from "react-icons/ai";
 
 export const Main = () => {
   return (

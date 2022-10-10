@@ -1,5 +1,6 @@
-const { REACT_APP_MY_URL } = process.env;
 import React from "react";
+const { REACT_APP_MY_URL } = process.env;
+
 export const deletingTask = async (taskId) => {
   const token = JSON.parse(localStorage.getItem("User Data")).token;
   if (token === null) {

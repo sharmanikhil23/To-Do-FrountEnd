@@ -1,5 +1,6 @@
-const { REACT_APP_MY_URL } = process.env;
 import React from "react";
+const { REACT_APP_MY_URL } = process.env;
+
 export const fetchingAllNotes = async () => {
   let url = `${REACT_APP_MY_URL}/tasks`;
   let method = "GET";

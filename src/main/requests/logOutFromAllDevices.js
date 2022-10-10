@@ -1,5 +1,6 @@
-const { REACT_APP_MY_URL } = process.env;
 import React from "react";
+const { REACT_APP_MY_URL } = process.env;
+
 export const logOutAll = async () => {
   const url = `${REACT_APP_MY_URL}/user/logoutAll`;
   const result = await fetch(url, {

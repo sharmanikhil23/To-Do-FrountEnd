@@ -1,9 +1,9 @@
+import React from "react";
 import { AiOutlineSearch, AiOutlineClose } from "react-icons/ai";
 import image from "./userBasic.jpeg";
 import { logOut } from "./requests/logOut";
 import { useNavigate } from "react-router-dom";
 import { logOutAll } from "./requests/logOutFromAllDevices";
-import React from "react";
 
 export const Header = ({
   searching,
