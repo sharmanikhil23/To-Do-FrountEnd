@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 const { REACT_APP_MY_URL } = process.env;
 
 export const fetchingAllNotes = async () => {
@@ -12,7 +13,10 @@ export const fetchingAllNotes = async () => {
     }),
   });
 
-  if (result.status !== 200) {
+  if (response.status === 401) {
+    const navigate = useNavigate();
+    navigate("/");
+  } else if (result.status !== 200) {
     console.log("called");
     return null;
   }

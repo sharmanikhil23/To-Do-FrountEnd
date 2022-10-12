@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 const { REACT_APP_MY_URL } = process.env;
 
 export const logOut = async () => {
@@ -13,6 +14,9 @@ export const logOut = async () => {
   console.log(result.status);
   if (result.status === 200) {
     return true;
+  } else if (response.status === 401) {
+    const navigate = useNavigate();
+    navigate("/");
   } else {
     return false;
   }
