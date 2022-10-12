@@ -13,11 +13,7 @@ export const fetchingAllNotes = async () => {
     }),
   });
 
-  if (response.status === 401) {
-    const navigate = useNavigate();
-    navigate("/");
-  } else if (result.status !== 200) {
-    console.log("called");
+  if (result.status !== 200) {
     return null;
   }
   const data = await result.json();

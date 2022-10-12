@@ -14,9 +14,6 @@ export const logOut = async () => {
   console.log(result.status);
   if (result.status === 200) {
     return true;
-  } else if (response.status === 401) {
-    const navigate = useNavigate();
-    navigate("/");
   } else {
     return false;
   }
