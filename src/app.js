@@ -5,7 +5,7 @@ import { SignUp } from "./forms/signUp";
 import { Loader } from "./loader";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-console.log();
+
 export const App = () => {
   const setDefault = {
     name: "",

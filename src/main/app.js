@@ -126,6 +126,10 @@ export const MainPage = () => {
         setAllNotes(value);
       });
     }
+
+    document.addEventListener("reload", () => {
+      navigate("/");
+    });
   }, []);
 
   return (
