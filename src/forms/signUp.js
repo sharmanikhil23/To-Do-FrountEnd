@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { Loader } from "../loader";
 import "./css/signIn.css";
 const { REACT_APP_MY_URL } = process.env;
 
@@ -36,6 +37,9 @@ export const SignUp = (args) => {
   const savingData = (e) => {
     const url = `${REACT_APP_MY_URL}/users`;
     e.preventDefault();
+    setData((current) => {
+      return { ...current, loading: true };
+    });
     fetch(url, {
       method: "POST",
       body: JSON.stringify({
@@ -49,6 +53,9 @@ export const SignUp = (args) => {
       },
     })
       .then((response) => {
+        setData((current) => {
+          return { ...current, loading: false };
+        });
         if (response.status === 201) {
           success = true;
         } else {

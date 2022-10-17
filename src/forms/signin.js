@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { Loader } from "../loader";
 import "./css/signIn.css";
 const { REACT_APP_MY_URL } = process.env;
 
@@ -40,6 +41,9 @@ export const SignIn = (args) => {
 
   const fetchingData = (e) => {
     e.preventDefault();
+    setData((current) => {
+      return { ...current, loading: true };
+    });
     fetch(`${REACT_APP_MY_URL}/user/login`, {
       method: "POST",
       body: JSON.stringify({
@@ -67,6 +71,9 @@ export const SignIn = (args) => {
         return response.json();
       })
       .then((data) => {
+        setData((current) => {
+          return { ...current, loading: false };
+        });
         if (success) {
           localStorage.setItem(
             "User Data",

@@ -2,6 +2,7 @@ import React, { useState, useEffect, Component } from "react";
 import { SignIn } from "./forms/signin";
 import { MainPage } from "./main/app";
 import { SignUp } from "./forms/signUp";
+import { Loader } from "./loader";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 console.log();
@@ -15,6 +16,7 @@ export const App = () => {
       message: "",
       errorValue: false,
     },
+    loading: false,
   };
   const [data, setData] = useState(setDefault);
 
@@ -34,6 +36,10 @@ export const App = () => {
       });
     }, 4000);
   }, [data.error.errorValue == true]);
+
+  if (data.loading) {
+    return <Loader></Loader>;
+  }
 
   return (
     <BrowserRouter>
