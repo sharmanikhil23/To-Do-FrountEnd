@@ -128,7 +128,7 @@ export const MainPage = () => {
     }
 
     document.addEventListener("reload", () => {
-      navigate("/");
+      window.location.href = "https://to-do-list-by-nikhil.netlify.app/";
     });
   }, []);
 
