@@ -2,6 +2,7 @@
 @import "./common.scss";
 
 #addingAreaHeading {
+  height: 5%;
   .comman-width {
     padding: 0.5rem 0rem;
     @include commonWidth;
@@ -15,6 +16,7 @@
 }
 
 #addingArea {
+  height: 10%;
   position: sticky;
   top: 20px;
   width: 100%;

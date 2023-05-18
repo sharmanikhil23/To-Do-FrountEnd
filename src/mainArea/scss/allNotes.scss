@@ -3,7 +3,7 @@
 
 #notesArea {
   width: 100%;
-  min-height: 70vh;
+  min-height: auto;
   .comman-width {
     @include commonWidth;
     padding: 1rem 0rem;
@@ -68,6 +68,11 @@
     }
   }
 }
+// @media screen and (min-width: 1200px) {
+//   #notesArea {
+//     min-height: 75vh;
+//   }
+// }
 
 @media screen and (max-width: 1200px) {
   #notes-area-element-align {

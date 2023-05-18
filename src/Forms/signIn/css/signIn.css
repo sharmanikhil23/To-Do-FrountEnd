@@ -108,6 +108,11 @@
   transform: scale(1.1, 1.1);
 }
 
+@media screen and (min-width: 1200px) {
+  .main-form-area {
+    width: 30% !important;
+  }
+}
 @media screen and (max-width: 1200px) {
   .errorArea {
     width: 60% !important;

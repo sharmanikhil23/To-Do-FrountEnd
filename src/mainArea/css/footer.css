@@ -1,7 +1,10 @@
 #footerArea {
+  width: 100%;
+  position: sticky;
+  bottom: 0;
   background-color: #4158d0;
   background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 17%, #ffcc70 39%, #644646 60%, #410d41 80%, #ffffff 100%);
-  min-height: 5vh;
+  min-height: 5%;
   overflow: hidden;
 }
 #footerArea .comman-width {

@@ -5,7 +5,6 @@ import SignUp from "../Forms/signUp/signUp";
 import { Main, checkingUserData } from "../mainArea/index";
 
 import fetchingAllNotes from "../mainArea/requests/fetchingAllNotes";
-import { all } from "axios";
 
 const Router = createBrowserRouter([
   {
@@ -13,7 +12,7 @@ const Router = createBrowserRouter([
     element: <Main></Main>,
     loader: async function () {
       let userData = checkingUserData();
-      if (userData != null || userData != undefined) {
+      if (userData !== null || userData !== undefined) {
         let allNotes = await fetchingAllNotes(userData.token);
         if (!allNotes) {
           return redirect("/signin");

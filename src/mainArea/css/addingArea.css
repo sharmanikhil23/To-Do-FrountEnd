@@ -1,3 +1,6 @@
+#addingAreaHeading {
+  height: 5%;
+}
 #addingAreaHeading .comman-width {
   padding: 0.5rem 0rem;
   width: 80vw;
@@ -11,6 +14,7 @@
 }
 
 #addingArea {
+  height: 10%;
   position: sticky;
   top: 20px;
   width: 100%;

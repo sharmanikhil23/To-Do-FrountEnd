@@ -2,9 +2,12 @@
 @import "./common.scss";
 
 #footerArea {
+  width: 100%;
+  position: sticky;
+  bottom: 0;
   background-color: $formAreaBgColor;
   background-image: $formBgImage;
-  min-height: 5vh;
+  min-height: 5%;
   overflow: hidden;
   .comman-width {
     @include commonWidth;
