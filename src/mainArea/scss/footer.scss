@@ -1,0 +1,32 @@
+@import "../../Forms/signIn/scss/color.scss";
+@import "./common.scss";
+
+#footerArea {
+  background-color: $formAreaBgColor;
+  background-image: $formBgImage;
+  min-height: 10vh;
+  overflow: hidden;
+  .comman-width {
+    @include commonWidth;
+    padding: 0.4rem 0rem;
+    #footerAreaAlighn {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-size: 25px;
+      padding: 0.3rem;
+      a {
+        color: white;
+        margin: 0.2rem 1rem;
+        transition: all 0.3s ease-in-out;
+        &:active {
+          font-size: 27px;
+        }
+        &:hover {
+          color: $formAreaBgColor;
+        }
+      }
+    }
+  }
+}

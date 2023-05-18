@@ -1,0 +1,57 @@
+#addingAreaHeading .comman-width {
+  padding: 0.5rem 0rem;
+  width: 80vw;
+  margin: auto;
+}
+#addingAreaHeading .comman-width #addingAreaHeading {
+  margin: 0.5rem;
+}
+#addingAreaHeading .comman-width #addingAreaHeading h1 {
+  font-size: 2rem;
+}
+
+#addingArea {
+  position: sticky;
+  top: 20px;
+  width: 100%;
+}
+#addingArea .comman-width {
+  padding: 0.5rem 0rem;
+  width: 80vw;
+  margin: auto;
+}
+#addingArea .comman-width #addingAreaForm {
+  border: 1px solid #fefefe;
+  box-shadow: 0px 0.3px 0.9px rgba(0, 0, 0, 0.1), 0px 1.6px 3.6px rgba(0, 0, 0, 0.1);
+  z-index: 6;
+  background-color: white;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+#addingArea .comman-width #addingAreaForm form {
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#addingArea .comman-width #addingAreaForm form input {
+  display: block;
+  padding: 0.3rem 0.5rem;
+  font-size: 1.3rem;
+  width: 100%;
+}
+#addingArea .comman-width #addingAreaForm form input:focus {
+  outline: none;
+}
+#addingArea .comman-width #addingAreaForm form .addingAreaForm-icons {
+  font-size: 1.2rem;
+  padding: 0.1rem;
+  font-weight: 800;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+#addingArea .comman-width #addingAreaForm form .addingAreaForm-icons:hover {
+  font-size: 1.45rem;
+  color: #4158d0;
+}/*# sourceMappingURL=addingArea.css.map */

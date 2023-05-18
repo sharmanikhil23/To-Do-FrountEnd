@@ -1,0 +1,20 @@
+@import "../Forms/signIn/scss/color.scss";
+* {
+  font-family: "Golos Text", sans-serif;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: $formAreaBgColor;
+  background-image: $formBgImage;
+  div#root {
+    width: 100vw;
+    min-height: 100vh;
+  }
+}

@@ -1,0 +1,30 @@
+#footerArea {
+  background-color: #4158d0;
+  background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 17%, #ffcc70 39%, #644646 60%, #410d41 80%, #ffffff 100%);
+  min-height: 10vh;
+  overflow: hidden;
+}
+#footerArea .comman-width {
+  width: 80vw;
+  margin: auto;
+  padding: 0.4rem 0rem;
+}
+#footerArea .comman-width #footerAreaAlighn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  padding: 0.3rem;
+}
+#footerArea .comman-width #footerAreaAlighn a {
+  color: white;
+  margin: 0.2rem 1rem;
+  transition: all 0.3s ease-in-out;
+}
+#footerArea .comman-width #footerAreaAlighn a:active {
+  font-size: 27px;
+}
+#footerArea .comman-width #footerAreaAlighn a:hover {
+  color: #4158d0;
+}/*# sourceMappingURL=footer.css.map */

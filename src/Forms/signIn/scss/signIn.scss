@@ -1,0 +1,187 @@
+@import "./color.scss";
+
+* {
+  font-family: "Golos Text", sans-serif;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#action {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: $formAreaBgColor;
+  background-image: $formBgImage;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .errorArea {
+    display: block;
+    position: absolute;
+    top: 13%;
+    z-index: 2;
+    background-color: #fff;
+    width: 30%;
+    text-align: center;
+    padding: 10px 5px;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+  .signUpForm-errorArea {
+    top: 5%;
+    font-size: 10px !important;
+  }
+  .main-form-area {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    width: 40%;
+    border-radius: 0.5rem;
+    background-color: $formBgColor;
+    padding: 35px;
+    .heading {
+      font-weight: 600;
+      font-size: 40px;
+      margin: 1rem;
+      text-align: center;
+    }
+    .main-form {
+      width: 100%;
+      margin: 1rem 0rem;
+      font-size: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      .input {
+        margin: 0.5rem;
+        font-size: 20px;
+        padding: 0.3rem;
+        border: 1px solid black;
+        width: 80%;
+        transition: all 0.1s ease-in-out;
+        &:hover,
+        &:active {
+          color: $formBgColor;
+          background-image: $formBgImage;
+        }
+      }
+      .showPassword {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        input {
+          size: 15px;
+          margin: 0rem 0.3rem;
+        }
+      }
+      .actionButtonArea {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0.5rem;
+        width: 100%;
+        .button {
+          color: black;
+          text-align: center;
+          text-decoration: none;
+          display: block;
+          padding: 0.3rem 1rem;
+          font-size: 20px;
+          margin: 0rem 0.5rem;
+          width: 30%;
+          font-weight: 500;
+          background-color: #e7f0fe;
+          border-radius: 1rem;
+          transition: all 0.2s ease-in-out;
+          &:hover,
+          &:active {
+            color: $formBgColor;
+            background-image: $formBgImage;
+          }
+          &:active {
+            transform: scale(1.1, 1.1);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .errorArea {
+    width: 60% !important;
+  }
+  .main-form-area {
+    width: 60% !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .errorArea {
+    width: 70% !important;
+    h1 {
+      font-size: 15px;
+    }
+  }
+  .main-form-area {
+    width: 70% !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .errorArea {
+    width: 75% !important;
+  }
+  .main-form-area {
+    width: 75% !important;
+  }
+
+  .actionButtonArea .button {
+    width: 50% !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .errorArea {
+    top: 10% !important;
+    width: 95% !important;
+    h1 {
+      font-size: 13px;
+    }
+  }
+  .main-form-area {
+    .heading {
+      font-size: 30px !important;
+    }
+    width: 95% !important;
+  }
+  .actionButtonArea .button {
+    width: 50% !important;
+    font-size: 15px !important;
+  }
+  .main-form .input {
+    font-size: 15px !important;
+    width: 95% !important;
+    margin: 0.3rem 0rem !important;
+    padding: 0.1rem !important;
+  }
+  .showPassword {
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 300px) {
+  .actionButtonArea {
+    width: 80% !important;
+    flex-direction: column !important;
+    .button {
+      margin: 5px 0px !important;
+      width: 100% !important;
+    }
+  }
+}
