@@ -68,6 +68,11 @@
   text-decoration: line-through !important;
 }
 
+@media screen and (min-width: 1200px) {
+  #notesArea {
+    min-height: 74vh;
+  }
+}
 @media screen and (max-width: 1200px) {
   #notes-area-element-align {
     grid-template-columns: 1fr 1fr 1fr !important;
