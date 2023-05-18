@@ -3,7 +3,7 @@
 
 #headingArea {
   width: 100%;
-  min-height: 10vh;
+  min-height: 5vh;
   background-color: $formAreaBgColor;
   background-image: $formBgImage;
   overflow: hidden;
@@ -86,7 +86,7 @@
             a {
               cursor: pointer;
               padding: 12px 16px;
-              font-size: 0.8rem;
+              font-size: 1rem;
               text-decoration: none;
               display: block !important;
               text-align: left;

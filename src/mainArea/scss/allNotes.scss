@@ -3,7 +3,7 @@
 
 #notesArea {
   width: 100%;
-  min-height: 60vh;
+  min-height: 70vh;
   .comman-width {
     @include commonWidth;
     padding: 1rem 0rem;
@@ -54,7 +54,7 @@
           text-align: left;
           text-align-last: center;
           line-height: 1.5rem;
-          font-size: 1rem;
+          font-size: 1.3rem;
           word-spacing: 0.3rem;
           white-space: wrap;
           height: 80%;

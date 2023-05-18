@@ -4,7 +4,7 @@
 #footerArea {
   background-color: $formAreaBgColor;
   background-image: $formBgImage;
-  min-height: 10vh;
+  min-height: 5vh;
   overflow: hidden;
   .comman-width {
     @include commonWidth;

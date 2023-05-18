@@ -9,7 +9,7 @@
 }
 
 #action {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   background-color: $formAreaBgColor;
   background-image: $formBgImage;
@@ -24,7 +24,7 @@
     top: 13%;
     z-index: 2;
     background-color: #fff;
-    width: 30%;
+    width: 35%;
     text-align: center;
     padding: 10px 5px;
     border-radius: 0.5rem;
@@ -36,7 +36,7 @@
   }
   .main-form-area {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    width: 40%;
+    width: 35%;
     border-radius: 0.5rem;
     background-color: $formBgColor;
     padding: 35px;
